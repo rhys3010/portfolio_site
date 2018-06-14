@@ -14,12 +14,56 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/rhysevans.min.css" rel="stylesheet">
+    <link href="css/portfolio-site.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
   </head>
 
   <body>
-    <h1>Lorem Ipsum</h1>
-    <!-- Navbar -->
-    <!-- Footer -->
+    <!-- Header + Nav -->
+    <header class="bg-dark">
+      <h1 class="site-heading text-center d-none d-lg-block">
+        <span class="site-heading-upper text-white my-3">John Doe</span>
+        <hr class="bg-light" />
+        <span class="site-heading-lower text-white my-3">Professional Individual</span>
+      </h1>
+      <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none text-white" href="#">John Doe</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="#">About Me</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="#">Projects</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <footer>
+    </footer>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/rhysevans.min.js"></script>
   </body>
 </html>
