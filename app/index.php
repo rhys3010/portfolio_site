@@ -73,10 +73,7 @@
         </div>
       </div>
     </section>
-    <!-- Links -->
-    <section class="bg-light">
 
-    </section>
     <!-- Footer -->
     <footer class="bg-dark text-white">
       <div class="container">
