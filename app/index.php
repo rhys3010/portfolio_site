@@ -90,6 +90,11 @@
               </li>
               <li class="list-inline-item">
                 <a href="">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="">
                   <i class="fa fa-youtube"></i>
                 </a>
               </li>
