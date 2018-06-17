@@ -51,11 +51,11 @@ hr {
   position: fixed;
   background-color: #343a40;
   z-index: 1025;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
 }
 
 #mainNav {
+  z-index: 1025;
+  background-color: #343a40;
   font-family: 'Raleway';
 }
 
@@ -70,6 +70,19 @@ hr {
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
   color: #66ccff;
+}
+
+#mainNav .navbar-nav .nav-item .dropdown-menu {
+  background-color: #343a40;
+}
+
+#mainNav .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: #adb5bd;
+  background-color: #343a40;
+}
+
+#mainNav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -176,9 +189,18 @@ ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   }
 }
 
+.discipline-box i {
+  color: #343a40;
+}
+
 .btn-primary {
   background-color: #66ccff;
   border-color: #66ccff;
+}
+
+.btn-primary:hover {
+  background-color: #33bbff;
+  border-color: #33bbff;
 }
 
 .text-primary {

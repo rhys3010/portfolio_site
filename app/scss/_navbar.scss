@@ -9,11 +9,11 @@
   position: fixed;
   background-color: $gray-800;
   z-index: 1025;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
 }
 
 #mainNav {
+  z-index: 1025;
+  background-color: $gray-800;
   @include heading-font;
   .navbar-brand {
     color: $primary;
@@ -28,6 +28,18 @@
       &.active {
         .nav-link {
           color: $primary;
+        }
+      }
+      .dropdown-menu{
+        background-color: $gray-800;
+
+        .dropdown-item{
+          color: $gray-500;
+          background-color: $gray-800;
+        }
+
+        .dropdown-item:hover{
+          color: $white;
         }
       }
     }
