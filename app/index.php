@@ -55,10 +55,29 @@
       </nav>
     </header>
     <!-- Intro -->
-    <section class="page-section clearfix">
+    <section class="page-section clearfix" id="intro">
       <div class="container">
         <div class="intro text-white">
-          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/portrait.jpg" alt="">
+          <div id="introCarousel" class="intro-img img-fluid mb-3 mb-lg-0 rounded carousel slide" data-ride"carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#introCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#introCarousel" data-slide-to="1"></li>
+              <li data-target="#introCarousel" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/portrait1.jpg" alt="" width="100%">
+              </div>
+              <div class="carousel-item">
+                <img src="img/portrait2.jpg" alt="" width="100%">
+              </div>
+              <div class="carousel-item">
+                <img src="img/portrait3.jpg" alt="" width="100%">
+              </div>
+            </div>
+          </div>
           <div class="intro-text left-0 text-center bg-faded p-5 rounded">
             <h2 class="section-heading mb-4">
               <span class="section-heading-upper">Introduction</span>
@@ -73,7 +92,34 @@
         </div>
       </div>
     </section>
-
+    <!-- Disciplines -->
+    <section class="bg-light my-4 p-3" id="disciplines">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-film text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Videography</h3>
+              <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-camera text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Photography</h3>
+              <p class="text-muted mb-0">Do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-headphones text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Audio Engineering</h3>
+              <p class="text-muted mb-0">Ut enim ad minim veniam, quis nostrud exercitatio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
     <footer class="bg-dark text-white">
       <div class="container">

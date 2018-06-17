@@ -1,3 +1,14 @@
+#mainNav.fixed{
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: $gray-800;
+  z-index: 1025;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
 #mainNav {
   @include heading-font;
   .navbar-brand {

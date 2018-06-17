@@ -1,3 +1,7 @@
+a {
+  color: #66ccff;
+}
+
 h1,
 h2,
 h3,
@@ -34,6 +38,17 @@ hr {
 
 .bg-faded {
   background-color: rgba(52, 58, 64, 0.85);
+}
+
+#mainNav.fixed {
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #343a40;
+  z-index: 1025;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 #mainNav {
@@ -129,6 +144,7 @@ ul.social-buttons li a:focus, ul.social-buttons li a:hover {
 }
 
 .intro {
+  padding-top: 65px;
   position: relative;
 }
 
@@ -160,4 +176,8 @@ ul.social-buttons li a:focus, ul.social-buttons li a:hover {
 .btn-primary {
   background-color: #66ccff;
   border-color: #66ccff;
+}
+
+.text-primary {
+  color: #66ccff !important;
 }
