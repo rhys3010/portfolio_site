@@ -27,36 +27,38 @@
         <hr class="bg-light" />
         <span class="site-heading-lower text-white my-3">Professional Individual</span>
       </h1>
-      <nav class="navbar navbar-expand-lg" id="mainNav">
-        <div class="container">
-          <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none text-white" href="#">John Doe</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars text-white"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="#">About Me</a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="#">Projects</a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-        </div>
-      </nav>
+      <div class="nav-wrapper">
+        <nav class="navbar navbar-expand-lg" id="mainNav">
+          <div class="container">
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none text-white" href="#">John Doe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item active px-lg-4">
+                  <a class="nav-link text-uppercase text-expanded" href="#">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item px-lg-4">
+                  <a class="nav-link text-uppercase text-expanded" href="#">About Me</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                  <a class="nav-link text-uppercase text-expanded" href="#">Projects</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                  <a class="nav-link text-uppercase text-expanded" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- Intro -->
     <section class="page-section clearfix" id="intro">
-      <div class="container">
+      <div class="container intro-wrapper">
         <div class="intro text-white">
           <div id="introCarousel" class="intro-img img-fluid mb-3 mb-lg-0 rounded carousel slide" data-ride"carousel">
             <!-- Indicators -->

@@ -40,6 +40,10 @@ hr {
   background-color: rgba(52, 58, 64, 0.85);
 }
 
+.nav-wrapper {
+  height: 53px;
+}
+
 #mainNav.fixed {
   left: 0;
   top: 0;
@@ -144,7 +148,6 @@ ul.social-buttons li a:focus, ul.social-buttons li a:hover {
 }
 
 .intro {
-  padding-top: 65px;
   position: relative;
 }
 
