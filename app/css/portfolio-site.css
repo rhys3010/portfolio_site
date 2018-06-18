@@ -213,7 +213,7 @@ ul.social-links li a:focus, ul.social-links li a:hover {
 }
 
 .discipline-box i {
-  color: #ced4da;
+  color: #868e96;
 }
 
 @media (min-width: 992px) {
@@ -298,26 +298,6 @@ ul.social-links li a:focus, ul.social-links li a:hover {
 .timeline .timeline-item .timeline-badge .glyphicon {
   top: 2px;
   left: 0px;
-}
-
-.timeline .timeline-item .timeline-badge.primary {
-  background-color: #1f9eba;
-}
-
-.timeline .timeline-item .timeline-badge.info {
-  background-color: #5bc0de;
-}
-
-.timeline .timeline-item .timeline-badge.success {
-  background-color: #59ba1f;
-}
-
-.timeline .timeline-item .timeline-badge.warning {
-  background-color: #d1bd10;
-}
-
-.timeline .timeline-item .timeline-badge.danger {
-  background-color: #ba1f1f;
 }
 
 .timeline .timeline-item .timeline-panel {
