@@ -1,0 +1,44 @@
+#profile{
+  
+}
+
+ul.social-links{
+  li {
+    a {
+      color: $white;
+      outline: none;
+      &:focus,
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #profile{
+    max-width: 30%;
+  }
+
+  ul.social-links{
+    margin-bottom: 0;
+    li {
+      a {
+        font-size: 20px;
+        line-height: 40px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        color: $white;
+        outline: none;
+        &:focus,
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

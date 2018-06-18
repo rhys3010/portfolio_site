@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="bg-light">
     <!-- Header + Nav -->
     <header class="bg-dark">
       <h1 class="site-heading text-center d-none d-lg-block">
