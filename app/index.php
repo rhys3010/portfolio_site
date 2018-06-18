@@ -99,37 +99,6 @@
         </div>
       </div>
     </section>
-    <!-- Disciplines -->
-    <section class="bg-light my-4 p-3" id="disciplines">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 text-center">
-            <div class="discipline-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-film mb-3 sr-icons"></i>
-              <h3 class="mb-3">Videography</h3>
-              <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
-              <a class="btn btn-primary text-white my-3 sr-button">View Work</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 text-center">
-            <div class="discipline-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-camera mb-3 sr-icons"></i>
-              <h3 class="mb-3">Photography</h3>
-              <p class="text-muted mb-0">Do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              <a class="btn btn-primary text-white my-3 sr-button">View Work</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 text-center">
-            <div class="discipline-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-headphones mb-3 sr-icons"></i>
-              <h3 class="mb-3">Audio Engineering</h3>
-              <p class="text-muted mb-0">Ut enim ad minim veniam, quis nostrud exercitatio</p>
-              <a class="btn btn-primary text-white my-3 sr-button">View Work</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Footer -->
     <footer class="bg-dark text-white">
       <div class="container">
