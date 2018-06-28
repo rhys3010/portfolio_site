@@ -1,4 +1,3 @@
-<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="author" content="Rhys Evans">
 
-    <title>John Doe</title>
+    <title>John Doe | Contact</title>
 
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,24 +35,24 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav mx-auto">
-                <li class="nav-item active px-lg-4">
-                  <a class="nav-link text-uppercase text-expanded" href="#">Home
-                    <span class="sr-only">(current)</span>
-                  </a>
+                <li class="nav-item px-lg-4">
+                  <a class="nav-link text-uppercase text-expanded" href="index.php">Home</a>
                 </li>
                 <li class="nav-item px-lg-4">
                   <a class="nav-link text-uppercase text-expanded" href="about.html">About Me</a>
                 </li>
                 <li class="nav-item dropdown px-lg-4">
-                  <a class="nav-link text-uppercase text-expanded dropdown-toggle" href="#" role="button" data-toggle="dropdown">Projects</a>
+                  <a class="nav-link text-uppercase text-expanded dropdown-toggle" href="" role="button" data-toggle="dropdown">Projects</a>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="projects.html#Videography">Videography</a>
                     <a class="dropdown-item" href="projects.html#Photography">Photography</a>
                     <a class="dropdown-item" href="projects.html#Audio_Engineering">Audio Engineering</a>
                   </div>
                 </li>
-                <li class="nav-item px-lg-4">
-                  <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
+                <li class="nav-item active px-lg-4">
+                  <a class="nav-link text-uppercase text-expanded" href="#">Contact
+                    <span class="sr-only">(current)</span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -61,39 +60,71 @@
         </nav>
       </div>
     </header>
-    <!-- Intro -->
-    <section class="page-section clearfix" id="intro">
-      <div class="container intro-wrapper">
-        <div class="intro text-white">
-          <div id="introCarousel" class="intro-img img-fluid mb-3 mb-lg-0 rounded carousel slide" data-ride"carousel">
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-              <li data-target="#introCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#introCarousel" data-slide-to="1"></li>
-              <li data-target="#introCarousel" data-slide-to="2"></li>
-            </ul>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/portrait1.jpg" alt="" width="100%">
+    <!-- Contact -->
+    <section class="my-4 p-2 mx-auto" id="contact">
+      <div class="container p-3">
+        <h3 class="section-heading thin mb-4 text-center">Contact Me</h3>
+        <hr class="bg-primary"/>
+        <div class="row">
+          <div class="col-lg-6">
+            <form>
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <input id="name" type="text" class="form-control" name="name" placeholder="Your Name *"/>
+                </div>
+                <div class="form-group col-lg-6">
+                  <input id="email" type="email" class="form-control" name="email" placeholder="Your Email *"/>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/portrait2.jpg" alt="" width="100%">
+              <div class="form-group">
+                <textarea id="message" name="message" class="form-control" placeholder="Message *" rows="5"></textarea>
               </div>
-              <div class="carousel-item">
-                <img src="img/portrait3.jpg" alt="" width="100%">
+              <div class="form-group">
+                <button class="btn btn-primary" type="submit">Submit</button>
               </div>
-            </div>
+            </form>
           </div>
-          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Introduction</span>
-              <span class="section-heading-lower">Welcome</span>
-            </h2>
-            <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            </p>
-            <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-lg" href="#">Learn More</a>
+          <div class="col-lg-6">
+            <div class="container">
+              <span class="text-uppercase text-primary text-justify">Email</span>
+              <br/>
+              john@doe.com
+            </div>
+            <div class="container my-4">
+              <span class="text-uppercase text-primary text-justify">Phone</span>
+              <br/>
+              +44 7951431677
+            </div>
+            <div class="container my-4">
+              <span class="text-uppercase text-primary text-justify">Social Media</span>
+              <br/>
+              <ul class="list-inline my-2">
+                <li class="list-inline-item">
+                  <a href="" class="text-dark">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="" class="text-dark">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="" class="text-dark">
+                    <i class="fa fa-youtube"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="" class="text-dark">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="" class="text-dark">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
