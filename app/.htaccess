@@ -1,0 +1,7 @@
+Options -Indexes
+ErrorDocument 404 /404-page.html
+ErrorDocument 403 /404-page.html
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

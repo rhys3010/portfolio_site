@@ -176,7 +176,11 @@ ul.social-buttons li a:focus, ul.social-buttons li a:hover {
 @media (min-width: 992px) {
   .intro .intro-img {
     width: 75%;
+    height: 100%;
     float: right;
+  }
+  .intro .intro-img .carousel-inner .carousel-item img {
+    width: 100%;
   }
   .intro .intro-text {
     left: 0;

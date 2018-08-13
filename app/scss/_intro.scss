@@ -4,6 +4,9 @@
     .intro-img {
       width: 75%;
       float: right;
+      .carousel-inner .carousel-item img{
+        width: 100%;
+      }
     }
     .intro-text {
       left: 0;
