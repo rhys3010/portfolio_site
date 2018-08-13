@@ -133,6 +133,7 @@ gulp.task('dev', ['css', 'js'], function() {
 gulp.task('dist', function() {
   gulp.src([
       './app/**',
+      './app/.*',
       '!./app/css/portfolio-site.css',
       '!./app/js/portfolio-site.js',
       '!./app/scss{,/**}'
