@@ -52,6 +52,31 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./app/vendor/scrollreveal'))
 
+  // PHPMailer
+  gulp.src([
+      './vendor/phpmailer/phpmailer/**',
+
+    ])
+    .pipe(gulp.dest('./app/vendor/phpmailer/phpmailer'))
+
+  // Autoload
+  gulp.src([
+    './vendor/autoload.php'
+  ])
+  .pipe(gulp.dest('./app/vendor'))
+
+  // Composer
+  gulp.src([
+    './vendor/composer/*'
+  ])
+  .pipe(gulp.dest('./app/vendor/composer'))
+
+  // dotenv
+  gulp.src([
+    './vendor/vlucas/phpdotenv/**'
+  ])
+  .pipe(gulp.dest('./app/vendor/vlucas/phpdotenv'))
+
 });
 
 // Compile SCSS

@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -67,22 +68,38 @@
         <hr class="bg-primary"/>
         <div class="row">
           <div class="col-lg-6">
-            <form>
+            <?php
+              //init variables
+              $cf = array();
+              $sr = false;
+
+              if(isset($_SESSION['cf_returndata'])){
+                  $cf = $_SESSION['cf_returndata'];
+                  $sr = true;
+              }
+
+            ?>
+            <form id="contactForm" name="sentMessage" method="post" action="php/mail.php">
               <div class="row">
                 <div class="form-group col-lg-6">
-                  <input id="name" type="text" class="form-control" name="name" placeholder="Your Name *"/>
+                  <input class="form-control <?php echo ($sr && !$cf['form_ok'] && !$cf['posted_form_data']['name']['valid']) ? 'text-danger' : '' ?>" id="name" type="text" placeholder="Your Name *" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name']['content'] : ''  ?>" required>
+                  <p class="help-block text-danger"><?php echo ($sr && !$cf['form_ok'] && !$cf['posted_form_data']['name']['valid']) ? 'Please Enter a Valid Name' : '' ?></p>
                 </div>
                 <div class="form-group col-lg-6">
-                  <input id="email" type="email" class="form-control" name="email" placeholder="Your Email *"/>
+                  <input class="form-control <?php echo ($sr && !$cf['form_ok'] && !$cf['posted_form_data']['email']['valid']) ? 'text-danger' : '' ?>" id="email" type="email" placeholder="Your Email *" name="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email']['content'] : '' ?>" required>
+                  <p class="help-block text-danger"><?php echo ($sr && !$cf['form_ok'] && !$cf['posted_form_data']['email']['valid']) ? 'Please Enter a Valid Email Address' : '' ?></p>
                 </div>
               </div>
               <div class="form-group">
-                <textarea id="message" name="message" class="form-control" placeholder="Message *" rows="5"></textarea>
+                <textarea class="form-control <?php echo ($sr && !$cf['form_ok'] && !$cf['posted_form_data']['message']['valid']) ? 'text-danger' : '' ?>" id="message" rows='5' placeholder="Your Message *" name="message" required><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['message']['content'] : '' ?></textarea>
+                <p class="help-block text-danger"><?php echo ($sr && !$cf['form_ok'] && !$cf['posted_form_data']['message']['valid']) ? 'Your Message must be at least 20 characters' : '' ?></p>
               </div>
               <div class="form-group">
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <p class="help-block text-success"><?php echo ($sr && $cf['form_ok']) ? 'Thank you for your message! I will get in touch shortly.' : ''; ?></p>
+                <button id="sendMessageButton" class="btn btn-primary" type="submit">Submit</button>
               </div>
             </form>
+            <?php unset($_SESSION['cf_returndata']); ?>
           </div>
           <div class="col-lg-6">
             <div class="container">
