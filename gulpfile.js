@@ -128,3 +128,15 @@ gulp.task('dev', ['css', 'js'], function() {
   gulp.watch('./scss/*.scss', ['css']);
   gulp.watch('./js/*.js', ['js']);
 });
+
+// Dist Task
+gulp.task('dist', function() {
+  gulp.src([
+      './app/**',
+      '!./app/css/portfolio-site.css',
+      '!./app/js/portfolio-site.js',
+      '!./app/scss{,/**}'
+    ])
+    .pipe(gulp.dest('./dist'))
+
+});

@@ -8,3 +8,6 @@ A Portfolio Website template for individuals to use to showcase their work and p
 * In the project's root directory run `php composer.phar install` this will install all the required php dependencies
 * In the project's root directory run `gulp vendor` this will place all the node modules and php dependencies in the /app/vendor directory.
 * In the 'app/php/' directory rename the file '.env.sample' to '.env' and fill in the required information.
+
+## Deployment
+* In the project's root directory run `gulp dist` this will populate the /dist/ directory with all the needed content to host the website, simply drop this into your web root.
