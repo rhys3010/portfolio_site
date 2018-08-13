@@ -2,12 +2,13 @@
   // Load PHPMailer
   require_once "../vendor/autoload.php";
 
-  // Load .env file for sensitive configs
-  $dotenv = new Dotenv\Dotenv(__DIR__);
-  $dotenv->load();
+  // email_send = Sender's Email
+  // email_pass = SEnder's Email Password
+  $email_send = ''
+  $email_pass = ''
 
-  $email_send = getenv("SENDER_EMAIL");
-  $email_pass = getenv("SENDER_EMAIL_PASS");
+  // email_rec = Recipient's Email
+  $email_rec = ''
 
   if(isset($_POST)){
 
@@ -93,7 +94,7 @@
       $mailer->Port = 587;
 
       $mailer->setFrom($email_send, "Message From Website");
-      $mailer->addAddress(getenv("RECIPIENT_EMAIL"));
+      $mailer->addAddress($email_rec);
 
       $mailer->isHTML(true);
 
